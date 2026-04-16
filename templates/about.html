@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="section center-text">
+  <h1> About Me</h1>
+  <img src="{{ url_for('static', filename='pawan.jpg') }}" alt="Profile" class="avatar-large">
+  <h2>Hi, I’m Pawan — a passionate backend developer and Computer Science Student.</h2>
+  <p class="quote">“I enjoy solving real-world problems and continuously exploring new technologies.”</p>
+</section>
+
+<section class="section">
+  <h3> Education</h3>
+  <p>
+    I’am Doing my B.E. in Computer Science(IoT& CyberSecurity including Blockchain Technology) from Rajarajeswari Engineering College, Ramohalli Cross (VTU).
+    My academic journey focused on data structures, algorithms, database systems, and web development.
+  </p>
+</section>
+
+<section class="section">
+  <h3> Interests</h3>
+  <div class="interest-icons">
+    <div class="interest-card">
+      <img src="{{ url_for('static', filename='coding.png') }}" class="icon">
+      <p>Programming</p>
+    </div>
+    <div class="interest-card">
+      <img src="{{ url_for('static', filename='ai.png') }}" class="icon">
+      <p>Artificial Intelligence</p>
+    </div>
+    <div class="interest-card">
+      <img src="{{ url_for('static', filename='data-scientist.png') }}" class="icon">
+      <p>Data Scientist</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

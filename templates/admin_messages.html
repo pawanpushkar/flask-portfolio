@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="section">
+  <h1>📬 Contact Submissions</h1>
+
+  <div class="table-container">
+    <table class="admin-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Message</th>
+          <th>Date Submitted</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for msg in messages %}
+        <tr>
+          <td>{{ msg[0] }}</td>
+          <td>{{ msg[1] }}</td>
+          <td>{{ msg[2] }}</td>
+          <td>{{ msg[3] }}</td>
+          <td>{{ msg[4] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}
