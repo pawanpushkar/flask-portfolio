@@ -1,0 +1,15 @@
+# Ignore database
+*.db
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore environment files
+.env
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore system files
+.DS_Store
